@@ -72,12 +72,16 @@ RUN apt-get update && apt-get install -y firefox libpci3
 
 
 # Get openjdk 17
-RUN apt-get install -y \
+RUN apt-get update && apt-get install -y \
 	openjdk-17-jre \
 	openjdk-17-jdk
 
-# Get vscode
+# install gnupg dependency for vscode
+RUN apt-get update && apt-get install -y \
+	gnupg
 
+# Get vscode
+RUN wget https://github.com/VSCodium/vscodium/releases/download/1.69.2/codium_1.69.2-1658192312_amd64.deb && dpkg -i ./codium_1.69.2-1658192312_amd64.deb
 
 # Killsession app
 COPY killsession/ /tmp/killsession
