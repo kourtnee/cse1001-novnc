@@ -70,6 +70,12 @@ RUN apt-get update && apt-get install -y nextcloud-desktop
 # Firefox
 RUN apt-get update && apt-get install -y firefox libpci3
 
+# install text editors
+RUN apt-get update && apt-get install -y \
+	vim \
+	emacs \
+	nano
+
 
 # Get openjdk 17
 RUN apt-get update && apt-get install -y \
