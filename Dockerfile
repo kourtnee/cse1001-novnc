@@ -8,7 +8,7 @@ FROM ubuntu:20.04 as system
 
 # Avoid prompts for time zone
 ENV DEBIAN_FRONTEND noninteractive
-ENV TZ=Europe/Paris
+ENV TZ=America/New_York
 # Fix issue with libGL on Windows
 ENV LIBGL_ALWAYS_INDIRECT=1
 
@@ -69,6 +69,15 @@ RUN apt-get update && apt-get install -y nextcloud-desktop
 
 # Firefox
 RUN apt-get update && apt-get install -y firefox libpci3
+
+
+# Get openjdk 17
+RUN apt-get install -y \
+	openjdk-17-jre \
+	openjdk-17-jdk
+
+# Get vscode
+
 
 # Killsession app
 COPY killsession/ /tmp/killsession
