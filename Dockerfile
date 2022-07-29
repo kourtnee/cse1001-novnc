@@ -44,7 +44,8 @@ RUN apt-get update \
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends --allow-unauthenticated \
-        xfce4 gtk2-engines-murrine gnome-themes-standard gtk2-engines-pixbuf gtk2-engines-murrine arc-theme
+        xfce4 xfce4-terminal gtk2-engines-murrine gnome-themes-standard gtk2-engines-pixbuf gtk2-engines-murrine arc-theme
+
 
 RUN apt-get update && apt-get install -y python3 python3-tk gcc make cmake
 
