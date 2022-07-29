@@ -12,6 +12,13 @@ ENV TZ=America/New_York
 # Fix issue with libGL on Windows
 ENV LIBGL_ALWAYS_INDIRECT=1
 
+######
+#Create default non-root user for CSE1001
+######
+ENV USERNAME=cse1001
+ENV USERID=%{USER_ID}
+ENV PASSWORD=java
+
 # built-in packages
 RUN apt-get update && apt-get upgrade -y && apt-get install apt-utils -y \
     && apt-get install -y --no-install-recommends software-properties-common curl apache2-utils \
@@ -44,7 +51,7 @@ RUN apt-get update \
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends --allow-unauthenticated \
-        xfce4 xfce4-terminal gtk2-engines-murrine gnome-themes-standard gtk2-engines-pixbuf gtk2-engines-murrine arc-theme
+        xfce4 xfce4-terminal xfce4-whiskermenu-plugin gtk2-engines-murrine gnome-themes-standard gtk2-engines-pixbuf gtk2-engines-murrine arc-theme
 
 
 RUN apt-get update && apt-get install -y python3 python3-tk gcc make cmake
@@ -82,7 +89,8 @@ RUN apt-get update && apt-get install -y firefox libpci3
 RUN apt-get update && apt-get install -y \
 	vim \
 	emacs \
-	nano
+	nano \
+	mousepad
 
 
 # Get openjdk 17
@@ -166,6 +174,7 @@ COPY --from=builder /src/web/dist/ /usr/local/lib/web/frontend/
 COPY rootfs /
 RUN ln -sf /usr/local/lib/web/frontend/static/websockify /usr/local/lib/web/frontend/static/novnc/utils/websockify && \
 	chmod +x /usr/local/lib/web/frontend/static/websockify/run
+
 
 EXPOSE 80
 WORKDIR /root
