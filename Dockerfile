@@ -38,10 +38,13 @@ RUN apt-get update \
 #     && rm google-chrome-stable_current_amd64.deb \
 #     && rm -rf /var/lib/apt/lists/*
 
+############################
+# set desktop environment for CSE1001
+############################
+
 RUN apt-get update \
     && apt-get install -y --no-install-recommends --allow-unauthenticated \
-        lxde gtk2-engines-murrine gnome-themes-standard gtk2-engines-pixbuf gtk2-engines-murrine arc-theme
-
+        xfce4 gtk2-engines-murrine gnome-themes-standard gtk2-engines-pixbuf gtk2-engines-murrine arc-theme
 
 RUN apt-get update && apt-get install -y python3 python3-tk gcc make cmake
 
@@ -70,6 +73,10 @@ RUN apt-get update && apt-get install -y nextcloud-desktop
 # Firefox
 RUN apt-get update && apt-get install -y firefox libpci3
 
+################################################################
+# Additions made for CSE1001 Java course
+################################################################
+
 # install text editors
 RUN apt-get update && apt-get install -y \
 	vim \
@@ -82,12 +89,7 @@ RUN apt-get update && apt-get install -y \
 	openjdk-17-jre \
 	openjdk-17-jdk
 
-# install gnupg dependency for vscode
-RUN apt-get update && apt-get install -y \
-	gnupg
-
-# Get vscode
-RUN wget https://github.com/VSCodium/vscodium/releases/download/1.69.2/codium_1.69.2-1658192312_amd64.deb && dpkg -i ./codium_1.69.2-1658192312_amd64.deb
+#################################################################
 
 # Killsession app
 COPY killsession/ /tmp/killsession
