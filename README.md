@@ -34,7 +34,7 @@ docker run -p 6080:80 kourtnee/cse1001-novnc
 Browse http://127.0.0.1:6080/
 
 
-Screen Resolution (in the even the browser desktop doesn't fit your screen correctly)
+Screen Resolution (in the event the browser desktop doesn't fit your screen correctly)
 ------------------
 
 The Resolution of virtual desktop adapts browser window size when first connecting the server. You may choose a fixed resolution by passing `RESOLUTION` environment variable, for example
@@ -49,7 +49,7 @@ Default Desktop User
 The default user is `cse1001`. You may change the user and password respectively by `USERNAME` and `PASSWORD` environment variables, for example,
 
 ```
-docker run -p 6080:80 -e USERNAME=`bob` -e PASSWORD=password kourtnee/cse1001-novnc
+docker run -p 6080:80 -e USERNAME=bob -e PASSWORD=password kourtnee/cse1001-novnc
 ```
 
 Additional Functionalities 
