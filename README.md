@@ -12,6 +12,7 @@ Based on the work by [Doro Wu](https://github.com/fcwu), see on [Docker](https:/
 Typical usage is:
 
 ```
+docker build . -t kourtnee/cse1001-novnc
 docker run -d -p 6080:80 --name cse1001 kourtnee/cse1001-novnc
 ```
 
