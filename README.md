@@ -16,6 +16,9 @@ docker build . -t kourtnee/cse1001-novnc
 docker run -d -p 6080:80 --name cse1001 kourtnee/cse1001-novnc
 ```
 
+Browse http://127.0.0.1:6080/
+
+
 Very Quick Start (This section is non-functional at the moment)
 ----------------
 Run ```./startUbuntu.sh```, you will have Ubuntu 20.04 in your browser, with the current working directory mounted on /workspace. The container will be removed when it stops, so save your work in /workspace if you want to keep it.
@@ -23,16 +26,6 @@ Run ```./startUbuntu.sh```, you will have Ubuntu 20.04 in your browser, with the
 There is a ```startUbuntu.ps1``` for the PowerShell of Windows. You may have to allow the execution of scripts with the command:
 
 ```Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser```.
-
-Quick Start
--------------------------
-Run the docker container and access with port `6080`
-
-```
-docker run -p 6080:80 kourtnee/cse1001-novnc
-```
-
-Browse http://127.0.0.1:6080/
 
 
 Screen Resolution (in the event the browser desktop doesn't fit your screen correctly)
