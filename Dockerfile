@@ -16,7 +16,7 @@ ENV LIBGL_ALWAYS_INDIRECT=1
 #Create default non-root user for CSE1001
 ######
 ENV USERNAME=cse1001
-ENV USERID=%{USER_ID}
+ENV USERID=${USER_ID}
 ENV PASSWORD=java
 
 # built-in packages
