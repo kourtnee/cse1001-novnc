@@ -3,7 +3,7 @@ docker-ubuntu-novnc
 
 Docker image to provide HTML5 VNC interface to access a Ubuntu 20.04 XFCE desktop environment.
 
-Available on Docker hub soon.
+Available on [Dockerhub](https://hub.docker.com/r/kourtnee/cse1001-novnc)
 
 The source files are available on [GitHub](https://github.com/kourtnee/cse1001-novnc.git)
 
@@ -19,11 +19,12 @@ docker run -d -p 6080:80 --name cse1001 kourtnee/cse1001-novnc
 Browse http://127.0.0.1:6080/
 
 
-Very Quick Start (This section is non-functional at the moment)
+Windows Run Instructions
 ----------------
-Run ```./startUbuntu.sh```, you will have Ubuntu 20.04 in your browser, with the current working directory mounted on /workspace. The container will be removed when it stops, so save your work in /workspace if you want to keep it.
+You will have Ubuntu 20.04 in your browser, with the current working directory mounted on /workspace. The container will not be removed when it stops, but you should save your work in /workspace if you want to access to it outside the docker.
 
-There is a ```startUbuntu.ps1``` for the PowerShell of Windows. You may have to allow the execution of scripts with the command:
+There is a ```startUbuntu.ps1``` for the PowerShell of Windows. You may have to allow the execution of scripts. 
+Open PowerShell as Administrator (Start menu > PowerShell > right-click > Run as Administrator) and enter this command:
 
 ```Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser```.
 
