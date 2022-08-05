@@ -9,7 +9,17 @@ The source files are available on [GitHub](https://github.com/kourtnee/cse1001-n
 
 Based on the work by [Doro Wu](https://github.com/fcwu), see on [Docker](https://hub.docker.com/r/dorowu/ubuntu-desktop-lxde-vnc/) and [Frederic Boulanger](https://github.com/Frederic-Boulanger-UPS), see on [Docker](https://hub.docker.com/r/fredblgr/ubuntu-novnc)
 
-Typical usage is:
+Important
+----------------
+
+* If you plan to have more than one container running, make sure you use different ports. The run scripts for this project default to 6080. 
+* Default username inside the container: cse1001
+* Default password inside the container: java
+
+
+
+Linux Run Instructions
+----------------
 
 ```
 docker build . -t kourtnee/cse1001-novnc
@@ -29,8 +39,8 @@ Open PowerShell as Administrator (Start menu > PowerShell > right-click > Run as
 ```Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser```.
 
 
-If you want the container to be fresh upon every use, edit the .ps1 file and add ```-rm``` before the -d flag to remove the container automatically when stopped (be careful about where you save your work in this instance).  
-If you want someone on the same network to be able to connect to your workspace, remove ```127.0.0.1``` from the run command in the .ps1 file.
+* If you want the container to be fresh upon every use, edit the .ps1 file and add ```-rm``` before the -d flag to remove the container automatically when stopped (be careful about where you save your work in this instance).  
+* If you want someone on the same network to be able to connect to your workspace, remove ```127.0.0.1``` from the run command in the .ps1 file.
 
 
 Screen Resolution (in the event the browser desktop doesn't fit your screen correctly)
