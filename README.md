@@ -29,7 +29,7 @@ Open PowerShell as Administrator (Start menu > PowerShell > right-click > Run as
 ```Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser```.
 
 
-If you want the container to be fresh upon every use, edit the .ps1 file and add ```-rm``` before the -d flag.  
+If you want the container to be fresh upon every use, edit the .ps1 file and add ```-rm``` before the -d flag to remove the container automatically when stopped (be careful about where you save your work in this instance).  
 If you want someone on the same network to be able to connect to your workspace, remove ```127.0.0.1``` from the run command in the .ps1 file.
 
 
