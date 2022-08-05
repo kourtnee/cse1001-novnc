@@ -35,6 +35,8 @@ docker run -d -p 6080:80 -v $PWD:/home/cse1001:rw -e VNC_PASSWORD=changeme --nam
 Browse http://127.0.0.1:6080/
 
 * You can add ```--rm``` before the -d tag to have the container automatically removed when stopped (be careful about where you save your work in this instance).
+* You can also edit the screen resolution by adding ```-e RESOLUTION=preference``` before the -v tag, where preference would be replaced by your preferred resolution.
+
 
 
 Windows Run Instructions
@@ -52,17 +54,9 @@ Open PowerShell as Administrator (Start menu > PowerShell > right-click > Run as
 
 * If you want the container to be fresh upon every use, edit the .ps1 file and add ```--rm``` before the -d flag to remove the container automatically when stopped (be careful about where you save your work in this instance).  
 * If you want someone on the same network to be able to connect to your workspace, remove ```127.0.0.1``` from the run command in the .ps1 file.
+* If the resolution of the novnc session is too small this can be edited inside of ```startUbuntu.ps1``` to a preferred resolution.
 
 
-
-Screen Resolution (in the event the browser desktop doesn't fit your screen correctly)
-------------------
-
-The Resolution of virtual desktop adapts browser window size when first connecting the server. You may choose a fixed resolution by passing `RESOLUTION` environment variable, for example
-
-```
-docker run -p 6080:80 -e RESOLUTION=1920x1080 kourtnee/cse1001-novnc
-```
 
 Additional Functionalities 
 --------------------
