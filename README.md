@@ -1,4 +1,4 @@
-docker-ubuntu-novnc
+CSE1001 Ubuntu Docker with novnc
 ===================
 
 Docker image to provide HTML5 VNC interface to access a Ubuntu 20.04 XFCE desktop environment.
@@ -27,6 +27,10 @@ There is a ```startUbuntu.ps1``` for the PowerShell of Windows. You may have to 
 Open PowerShell as Administrator (Start menu > PowerShell > right-click > Run as Administrator) and enter this command:
 
 ```Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser```.
+
+
+If you want the container to be fresh upon every use, edit the .ps1 file and add ```-rm``` before the -d flag.  
+If you want someone on the same network to be able to connect to your workspace, remove ```127.0.0.1``` from the run command in the .ps1 file.
 
 
 Screen Resolution (in the event the browser desktop doesn't fit your screen correctly)
