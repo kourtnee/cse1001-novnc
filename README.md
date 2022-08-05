@@ -9,7 +9,7 @@ The source files are available on [GitHub](https://github.com/kourtnee/cse1001-n
 
 Based on the work by [Doro Wu](https://github.com/fcwu), see on [Docker](https://hub.docker.com/r/dorowu/ubuntu-desktop-lxde-vnc/) and [Frederic Boulanger](https://github.com/Frederic-Boulanger-UPS), see on [Docker](https://hub.docker.com/r/fredblgr/ubuntu-novnc)
 
-
+<p>&nbsp;</p>
 
 Important
 ----------------
@@ -18,7 +18,7 @@ Important
 * Default username inside the container: cse1001
 * Default password inside the container: java
 
-
+<p>&nbsp;</p>
 
 Linux Run Instructions
 ----------------
@@ -37,7 +37,7 @@ Browse http://127.0.0.1:6080/
 * You can add ```--rm``` before the -d tag to have the container automatically removed when stopped (be careful about where you save your work in this instance).
 * You can also edit the screen resolution by adding ```-e RESOLUTION=preference``` before the -v tag, where preference would be replaced by your preferred resolution.
 
-
+<p>&nbsp;</p>
 
 Windows Run Instructions
 ----------------
@@ -56,12 +56,14 @@ Open PowerShell as Administrator (Start menu > PowerShell > right-click > Run as
 * If you want someone on the same network to be able to connect to your workspace, remove ```127.0.0.1``` from the run command in the .ps1 file.
 * If the resolution of the novnc session is too small this can be edited inside of ```startUbuntu.ps1``` to a preferred resolution.
 
-
+<p>&nbsp;</p>
 
 Additional Functionalities 
 --------------------
 
 If you're interested in some of the more intricate functionalities of this container, please see the repo this project is forked from. This project has a very specific use-case and as such was simplified for it's purpose. A lot of the functionality from the original project is still available in the source code for those who want to use it. 
+
+<p>&nbsp;</p>
 
 License
 ==================
