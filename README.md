@@ -20,7 +20,7 @@ Important
 
 <p>&nbsp;</p>
 
-Linux Run Instructions
+Linux and Intel Macbook Build/Run Instructions
 ----------------
 In the terminal:
 ```
@@ -39,19 +39,26 @@ Browse http://127.0.0.1:6080/
 
 <p>&nbsp;</p>
 
-Windows Run Instructions
+M1/Intel Macbook and Linux Auto Run Instructions
 ----------------
 You will have Ubuntu 20.04 in your browser, with the current working directory mounted on /home/cse1001/workspace. The container will not be removed when it stops, but you should save your work in /home/cse1001/workspace if you want to access to it outside the docker.
 
-There is a ```startUbuntu.ps1``` for the PowerShell of Windows.
-* edit this file where it says ```VNC_PASS``` to change the password for the container to your preferred password
+Create a folder for your project, copy the ```startUbuntu.sh``` file into it and run the command ```./startUbuntu.sh```
+
+<p>&nbsp;</p>
+
+Windows Auto Run Instructions
+----------------
+You will have Ubuntu 20.04 in your browser, with the current working directory mounted on /home/cse1001/workspace. The container will not be removed when it stops, but you should save your work in /home/cse1001/workspace if you want to access to it outside the docker.
+
+Create a folder for your project, copy the ```startUbuntu.ps1``` file into it and run the command ```./startUbuntu.ps1```
 
 You may have to allow the execution of scripts. 
 Open PowerShell as Administrator (Start menu > PowerShell > right-click > Run as Administrator) and enter this command:
 
-```Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser```.
+```Set-ExecutionPolicy -ExecutionPolicy Unrestricted -Scope CurrentUser```
 
-
+* Edit this file where it says ```VNC_PASS``` to change the password for the container to your preferred password
 * If you want the container to be fresh upon every use, edit the .ps1 file and add ```--rm``` before the -d flag to remove the container automatically when stopped (be careful about where you save your work in this instance).  
 * If you want someone on the same network to be able to connect to your workspace, remove ```127.0.0.1``` from the run command in the .ps1 file.
 * If the resolution of the novnc session is too small this can be edited inside of ```startUbuntu.ps1``` to a preferred resolution.
