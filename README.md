@@ -29,7 +29,7 @@ docker build . -t cse1001-novnc
 
 Default run command:
 ```
-docker run -d -p 6080:80 -v $PWD:/home/cse1001:rw -e VNC_PASSWORD=changeme --name cse1001 cse1001-novnc
+docker run -d -p 6080:80 -v $PWD:/home/cse1001/workspace:rw -e VNC_PASSWORD=changeme --name cse1001 cse1001-novnc
 ```
 
 Browse http://127.0.0.1:6080/
