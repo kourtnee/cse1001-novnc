@@ -56,7 +56,7 @@ Open PowerShell as Administrator (Start menu > PowerShell > right-click > Run as
 
 <p>&nbsp;</p>
 
-Linux and Intel Mackbook Auto Run Instructions
+Linux and Intel Macbook Auto Run Instructions
 ----------------
 You will have Ubuntu 20.04 in your browser, with the current working directory mounted on /home/cse1001/workspace. The container will not be removed when it stops, but you should save your work in /home/cse1001/workspace if you want to access to it outside the docker.
 
@@ -68,7 +68,7 @@ Create a folder for your project, copy the ```start1001Linux.sh``` file into it 
 
 <p>&nbsp;</p>
 
-M1 Mackbook Auto Run Instructions
+M1 Macbook Auto Run Instructions
 ----------------
 You will have Ubuntu 20.04 in your browser, with the current working directory mounted on /home/cse1001/workspace. The container will not be removed when it stops, but you should save your work in /home/cse1001/workspace if you want to access to it outside the docker.
 
