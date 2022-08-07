@@ -52,7 +52,7 @@ RUN apt-get update \
 RUN apt-get update \
     && apt-get install -y --no-install-recommends --allow-unauthenticated \
         xfce4 xfce4-terminal xfce4-whiskermenu-plugin gtk2-engines-murrine gnome-themes-standard gtk2-engines-pixbuf gtk2-engines-murrine arc-theme
-
+############################
 
 RUN apt-get update && apt-get install -y python3 python3-tk gcc make cmake
 
@@ -168,7 +168,7 @@ RUN apt autoremove && apt autoclean
 # merge
 ################################################################################
 FROM system
-LABEL maintainer="frederic.boulanger@centralesupelec.fr"
+LABEL maintainer="kfernalld2018@my.fit.edu"
 
 COPY --from=builder /src/web/dist/ /usr/local/lib/web/frontend/
 COPY rootfs /
