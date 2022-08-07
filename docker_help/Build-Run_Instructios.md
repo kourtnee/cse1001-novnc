@@ -14,10 +14,10 @@ Of course there’s the possibility that a resource referenced in the Dockerfile
 
 Actual Build and Run instructions are on the github page for the images. As well as the Auto Run scripts.
 
-[CSE1001](https://github.com/kourtnee/cse1001-novnc)
-[CSE4001](https://github.com/kourtnee/os161-novnc)
+[CSE1001](https://github.com/kourtnee/cse1001-novnc)  
+[CSE4001](https://github.com/kourtnee/os161-novnc)  
 [CSE3801](https://github.com/condor0010/FIT-kali-docker)
 
-Related docker hub repos:
-[CSE1001](https://hub.docker.com/r/kourtnee/cse1001-novnc)
+Related docker hub repos:  
+[CSE1001](https://hub.docker.com/r/kourtnee/cse1001-novnc)  
 [CSE3801](https://hub.docker.com/r/condor0010/cse3801)
