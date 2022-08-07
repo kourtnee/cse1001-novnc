@@ -18,6 +18,12 @@ Important
 * Default username inside the container: cse1001
 * Default password inside the container: java
 
+<p>&nbsp;</p>  
+
+This [folder](https://github.com/kourtnee/cse1001-novnc/tree/master/docker_help) has help for the following:  
+* Navigating docker containers  
+* Setting up docker on Mac (Intel and M1), Windows, and Linux
+
 <p>&nbsp;</p>
 
 Linux and Intel Macbook Build/Run Instructions
