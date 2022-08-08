@@ -17,6 +17,7 @@ Important
 * If you plan to have more than one container running, make sure you use different ports. The run scripts for this project default to 6080. 
 * Default username inside the container: cse1001
 * Default password inside the container: java
+* The auto run scripts automatically try to open the Firefox web browser. If you don't want to use that you can manually connect in the browser of your choice with: http://127.0.0.1:6080/
 
 <p>&nbsp;</p>  
 
