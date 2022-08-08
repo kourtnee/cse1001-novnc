@@ -12,16 +12,16 @@
 
 * Once it’s downloaded click on the file, and follow the install wizard 
 
+## 2. Follow instructions for WSL (if prompted once docker installs)  
+https://docs.microsoft.com/en-us/windows/wsl/install-manual
+
+* Step 6: Install your Linux distro of choice -> shouldn’t be necessary unless you plan to use it outside the course
+
 *** If you are going to use the Auto Run script you may not even need this step
-## 2. Install git  
+## 3. Install git  
 * https://git-scm.com/download/win  
 * Click 64-bit Git under the Standalone Installer header
 
 <p align="center">
   <img src="https://github.com/kourtnee/cse1001-novnc/blob/master/images/windows2.png" />
 </p>
-
-## 3. Follow instructions for WSL (if prompted once docker installs)  
-https://docs.microsoft.com/en-us/windows/wsl/install-manual
-
-* Step 6: Install your Linux distro of choice -> shouldn’t be necessary unless you plan to use it outside the course
