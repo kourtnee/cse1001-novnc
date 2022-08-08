@@ -17,6 +17,8 @@ https://docs.microsoft.com/en-us/windows/wsl/install-manual
 
 * Step 6: Install your Linux distro of choice -> shouldn’t be necessary unless you plan to use it outside the course
 
+<p>&nbsp;</p>
+
 *** If you are going to use the Auto Run script you may not even need this step
 ## 3. Install git  
 * https://git-scm.com/download/win  
