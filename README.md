@@ -14,7 +14,7 @@ Based on the work by [Doro Wu](https://github.com/fcwu), see on [Docker](https:/
 Important
 ----------------
 
-* For help installing and using docker go [here](https://github.com/kourtnee/cse1001-novnc/tree/master/docker_help)
+* For help installing and using docker with this project go [here](https://github.com/kourtnee/cse1001-novnc/tree/master/docker_help)
 * If you plan to have more than one container running, make sure you use different ports. The run scripts for this project default to 6080. 
 * Default username inside the container: cse1001
 * Default password inside the container: java
