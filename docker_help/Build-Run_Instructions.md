@@ -23,6 +23,6 @@ Actual Build and Run instructions are on the github page for the images. As well
 Related docker hub repos:  
 [CSE1001](https://hub.docker.com/r/kourtnee/cse1001-novnc)  
 [CSE4001-VNC](https://hub.docker.com/r/tjoconnor/cse4001-vnc)  
-[CSE4001](https://hub.docker.com/r/tjoconnor/cse4001)  
-[CSE3801](https://hub.docker.com/r/tjoconnor/cyber_ops)
-[CSE3801-VNC](https://hub.docker.com/r/tjoconnor/cyber_ops_vnc)
+[CSE4001](https://hub.docker.com/r/tjoconnor/cse4001)    
+[CSE3801](https://hub.docker.com/r/tjoconnor/cyber_ops)  
+[CSE3801-VNC](https://hub.docker.com/r/tjoconnor/cyber_ops_vnc)  
