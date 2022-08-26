@@ -14,9 +14,11 @@ Of course there’s the possibility that a resource referenced in the Dockerfile
 
 Actual Build and Run instructions are on the github page for the images. As well as the Auto Run scripts.
 
-[CSE1001](https://github.com/kourtnee/cse1001-novnc)  
-[CSE4001](https://github.com/kourtnee/os161-novnc)  
-[CSE3801](https://github.com/condor0010/FIT-kali-docker)
+[CSE1001](https://github.com/FITSEC/docker_images/tree/main/cse1001_vnc)  
+[CSE4001-VNC](https://github.com/FITSEC/docker_images/tree/main/cse4001_vnc)
+[CSE4001](https://github.com/FITSEC/docker_images/tree/main/cse4001)
+[CSE3801-VNC](https://github.com/FITSEC/docker_images/tree/main/cyber_ops_vnc)
+[CSE3801](https://github.com/FITSEC/docker_images/tree/main/cyber_ops)
 
 Related docker hub repos:  
 [CSE1001](https://hub.docker.com/r/kourtnee/cse1001-novnc)  
